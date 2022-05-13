@@ -16,7 +16,7 @@
 ## TROUBLE SHOOTING
 :exclamation: [Trouble Shooting](./TroubleShooting.md) :exclamation:
 
-## 느낀점
+## REVIEW
 
 
 ## REFERENCE
