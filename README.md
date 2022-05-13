@@ -5,10 +5,10 @@
 
 
 ## MEMBER
-* [강윤조]() 🌷
-* [박미희]() 🌼
-* [서예원]() 🌻
-* [이수민]() :rose:
+* [강윤조](https://github.com/YunJo0618) 🌷
+* [박미희](https://github.com/PMH2906) 🌼
+* [서예원](https://github.com/woodybuzz02) 🌻
+* [이수민](https://github.com/Leesumin0424) :rose:
 
 ## RESULT
 
