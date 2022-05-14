@@ -13,7 +13,7 @@ public class BookDAO {
 	private PreparedStatement preparedStatement;
 
 	public int save(Book newBook) {
-		String insertQuery = "INSERT INTO book (rank, book_Id, title, author, field, rental_Status) VALUES(?,?,?,?,?,?)";
+		String insertQuery = "INSERT INTO book VALUES(?, ?, ?, ?, ?, ?)";
 		int affectedRows = 0;
 		
 		try (Connection connection = DBUtils.getConnection();
