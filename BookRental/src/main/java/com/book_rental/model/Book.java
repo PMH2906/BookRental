@@ -1,0 +1,81 @@
+package com.book_rental.model;
+
+import lombok.Getter;
+
+@Getter
+public class Book {
+
+	private int rank;
+	private long bookId;
+	private String title;
+	private String author;
+	private String field;
+	private boolean rentalStatus;
+	
+	
+	
+	public Book(Builder builder) {
+		this.rank = builder.rank;
+		this.bookId = builder.bookId;
+		this.title = builder.title;
+		this.author = builder.author;
+		this.field = builder.field;
+		this.rentalStatus = builder.rentalStatus;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Book [rank=" + rank + ", bookId=" + bookId + ", title=" + title + ", author=" + author + ", field="
+				+ field + ", rentalStatus=" + rentalStatus + "]";
+	}
+
+
+
+	public static class Builder {
+		private int rank;
+		private long bookId;
+		private String title;
+		private String author;
+		private String field;
+		private boolean rentalStatus;
+		
+		public Builder (long bookId) {
+			this.bookId = bookId;
+		}
+		
+		public Builder rank(int rank) {
+			this.rank = rank;
+			return this;
+		}
+		
+		public Builder title(String title) {
+			this.title = title;
+			return this;
+		}
+		
+		public Builder author(String author) {
+			this.author = author;
+			return this;
+		}
+		
+		public Builder field(String field) {
+			this.field = field;
+			return this;
+		}
+		
+		public Builder rentalStatus(boolean rentalStatus) {
+			this.rentalStatus = rentalStatus;
+			return this;
+		}
+		
+		public Book build() {
+			return new Book(this);
+		}
+		
+	}
+
+
+	
+}
