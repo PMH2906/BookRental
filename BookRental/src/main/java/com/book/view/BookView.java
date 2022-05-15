@@ -22,17 +22,17 @@ public class BookView {
 		return choice;
 	}
 	public void programEnd() {
-		System.out.println("시스템이 종료되었습니다");
+		System.out.println("\n>>> 프로그램이 종료되었습니다 <<<");
 		
 	}
 
 	public void programErrorPage() {
-		System.out.println("\n>>> 메뉴에 없는 번호입니다. 다시 선택하세요 <<<");
+		System.out.println("\n>>> 메뉴에 없는 번호입니다. 다시 선택하세요. <<<");
 
 	}
 	// 파손된 책을 삭제하는 서비스 실행 시 출력되는 문구
 	public String deleteBook() {
-		System.out.println("\n파손된 책 이름 혹은 책 ID를 입력하세요.");
+		System.out.print("\n▷ 파손된 책 이름 혹은 책 ID 입력 : ");
 		Scanner sc = new Scanner(System.in);
 		String brokenBook = sc.nextLine(); 
 		return brokenBook;
@@ -40,12 +40,12 @@ public class BookView {
 
 	// 파손된 책 정상적으로 삭제
 	public void deleteBookSuccessPage(String brokenBook) {
-		System.out.println(String.format("\nSUCCESS! <%S> 해당 책이 정상적으로 삭제되었습니다.",brokenBook));
+		System.out.println(String.format("\n▷ SUCCESS! <%S> 해당 책이 정상적으로 삭제되었습니다.",brokenBook));
 		
 	}
 	// 파손된 책 삭제 과정에서 error발생
 	public void deleteBookErrorPage(String brokenBook) {
-		System.out.println(String.format("\nFAIL! <%S> 해당 책이 존재하지 않습니다.",brokenBook));
+		System.out.println(String.format("\n▷ FAIL! <%S> 해당 책이 존재하지 않습니다.",brokenBook));
 		
 	}
 

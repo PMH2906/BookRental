@@ -8,13 +8,8 @@ public class App
     {
     	BookController boolController = new BookController();
     	
-    	// System Start. 시작 메뉴 출력.
+    	// Program Start.
     	boolController.programStart();
     	
-    	
-    	
-//    	// 파손된 책 삭제
-//    	String brokenBook = boolController.startDeleteService();
-//    	boolController.deleteBook(brokenBook);
     }
 }

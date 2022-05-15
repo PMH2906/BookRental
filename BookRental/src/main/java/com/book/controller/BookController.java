@@ -33,7 +33,7 @@ public class BookController {
 			deleteBook();
 			break;
 		case "4":
-			// 프로그램 종료. 자원해제
+			// 프로그램 종료.
 			bookView.programEnd();
 			break;
 		default:
