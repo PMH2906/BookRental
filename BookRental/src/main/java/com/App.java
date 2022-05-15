@@ -1,13 +1,15 @@
 package com;
 
-/**
- * Hello world!
- *
- */
+import com.book.controller.BookController;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	BookController boolController = new BookController();
+    	
+    	// 파손된 책 삭제
+    	String brokenBook = boolController.startDeleteService();
+    	boolController.deleteBook(brokenBook);
     }
 }
