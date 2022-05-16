@@ -3,26 +3,15 @@ package com.book.utils;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-<<<<<<< HEAD
-import java.sql.Statement;
 
 //DB와 관련된 설정 정보나 수행들을 관리하는 클래스
 public class DBUtils {
-	// MySQL 서버 URL
-	private static final String DB_URL = "jdbc:mysql://localhost:3306/";
-	// 사용하고자 하는 스키마(Database) 이름
-=======
-
-public class DBUtils {
-	
 	
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/";
->>>>>>> find
 	private static final String DATABASE_NAME = "book_rental_shop";
 	private static final String USER = "root";
 	private static final String PASSWORD = "1234";
 	
-<<<<<<< HEAD
 	public static Connection getConnection() throws SQLException {
 
 		// DriverManager를 통해 각 애플리케이션에 맞는 드라이버 호출 가능
@@ -31,18 +20,4 @@ public class DBUtils {
 		return connection;
 	}
 
-	
-
-=======
-
-	
-	public static Connection getConnection() throws SQLException {
-		
-
-		Connection connection = DriverManager.getConnection(DB_URL + DATABASE_NAME, USER, PASSWORD);
-		
-		return connection;
-	}
-
->>>>>>> find
 }

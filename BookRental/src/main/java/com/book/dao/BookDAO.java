@@ -2,13 +2,10 @@ package com.book.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-<<<<<<< HEAD
-import java.sql.SQLException;
-=======
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
->>>>>>> find
 
 import com.book.model.Book;
 import com.book.utils.DBUtils;
@@ -73,7 +70,7 @@ public class BookDAO {
 	
 	
 	public List<Book> findAll() {
-		String selectQuery = "SELECT * FROM book ORDER BY rank limit 5";
+		String selectQuery = "SELECT * FROM book ORDER BY rank_id limit 5";
 
 		List<Book> books = new ArrayList<>();
 		

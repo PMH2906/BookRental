@@ -2,8 +2,6 @@ package com.book.controller;
 
 
 import java.util.List;
-
->>>>>>> find
 import com.book.model.Book;
 import com.book.service.BookService;
 import com.book.view.BookView;
@@ -86,12 +84,9 @@ public class BookController {
 		}
 	}
 	
-
-	
 		// 전체 데이터 조회 처리를 위한 분기
 		public void findAll() {
 			books = bookService.findAll();
-			bookView.findAll(books);
 		}
 
 	}

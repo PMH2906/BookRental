@@ -13,7 +13,6 @@ import lombok.ToString;
 public class Book {
 	private int rank;
 	private Long bookId;
-
 	private String title;
 	private String author;
 	private String field;
@@ -86,5 +85,14 @@ public class Book {
 
 	
 }
+
+	public Book(int rank, Long bookId, String title, String author, String field, boolean rentalStatus) {
+		this.rank = rank;
+		this.bookId = bookId;
+		this.title = title;
+		this.author = author;
+		this.field = field;
+		this.rentalStatus = rentalStatus;
+	}
 	
 }
