@@ -32,7 +32,7 @@
 - CRUD 기능별로 각자 맡아서 구현하여 변수명, 변수의 자료형 등이 달라 SAVE기능을 MERGE 할 때 많은 시간을 소요함.
   - 해결방식 : 이후 기능들은 Convention을 기준으로 먼저 맞춘 후 MERGE하는 시간을 단축함. 
 
-- 한 팀원의 환경설정이 달라서 clone이 되지 않아 별개의 파일로 UPDATE를 구현하였으나 MERGE를 하지 못함 --해결중--ㅜ.ㅜ
+- 한 팀원의 환경설정이 달라서 clone이 되지 않아 별개의 파일로 UPDATE를 구현하였으나 MERGE를 하지 못함 --해결중--
  
 - csv 파일을 MySQL로 import 시 오류발생하면서 테이블이 생성되지 않았음 -> Unhandled exception : cp949 codec can't decode byte 0xed in position 45
   - 해결방식 : import 하려고 했던 *.csv 파일을 메모장으로 불러와 형식을 utf-8(BOM)으로 바꾸었으나 해결되지 않아 새로 엑셀 파일을 만들어서 해결.
