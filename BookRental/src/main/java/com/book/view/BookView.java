@@ -2,6 +2,8 @@ package com.book.view;
 
 import java.util.Scanner;
 
+import com.book.model.Book;
+
 public class BookView {
 
 	// 첫 화면에 베스트셀러 출력하도록 하려면 controller에서 BookService.java를 이용하여 top5 book list받은 후 
@@ -45,5 +47,38 @@ public class BookView {
 	// 파손된 책 삭제 과정에서 error발생
 	public void deleteBookErrorPage(String brokenBook) {
 		System.out.println(String.format("\n▷ FAIL! <%S> 해당 책이 존재하지 않습니다.",brokenBook));	
+	}
+	public Book SaveBook() {
+		Scanner saveInput = new Scanner(System.in);
+    	System.out.println("등록할 book_id :");
+    	Long saveBookId = saveInput.nextLong();
+    	saveInput.nextLine();
+    	System.out.println("등록할 rank_id :");
+    	int saveRank = saveInput.nextInt();
+    	saveInput.nextLine();
+    	System.out.println("등록할 title :");
+    	String saveTitle = saveInput.nextLine();
+    	System.out.println("등록할 author :");
+    	String saveAuthor = saveInput.nextLine();
+    	System.out.println("등록할 field :");
+    	String saveField = saveInput.nextLine();
+    	
+    	Book newBook = new Book.Builder(saveBookId)
+        		.rank(saveRank)
+        		.title(saveTitle)
+        		.author(saveAuthor)
+        		.field(saveField)
+        		.rentalStatus(true)
+        		.build();
+    
+		return newBook;
+	}
+	public void successPage(Book saveBook) {
+		System.out.println(String.format("\\n▷ SUCCESS! <%S> 해당 책이 정상 등록 되었습니다.",saveBook));
+		
+	}
+	public void errorPage(Book saveBook) {
+		System.out.println(String.format("\\n▷ FAIL! <%S> 해당 책이 정상 등록되지 않았습니다.",saveBook));
+		
 	}
 }

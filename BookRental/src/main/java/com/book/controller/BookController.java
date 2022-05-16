@@ -1,5 +1,6 @@
 package com.book.controller;
 
+import com.book.model.Book;
 import com.book.service.BookService;
 import com.book.view.BookView;
 
@@ -26,7 +27,7 @@ public class BookController {
 			// 책 대여 서비스 메서드
 			break;
 		case "2":
-			// 책 추가 서비스 메서드
+			saveBook();
 			break;
 		case "3":
 			// 책 삭제 서비스 
@@ -59,5 +60,19 @@ public class BookController {
 			bookView.deleteBookErrorPage(brokenBook);
 		}	
 	}
+	
+	private void saveBook() {
+		int result = 0;
+		
+		Book saveBook = bookView.SaveBook();
+		
+		result = bookService.saveBook(saveBook);
+		if(result > 0) {
+			bookView.successPage(saveBook);
+		} else {
+			bookView.errorPage(saveBook);
+		}
+	}
+	
 
 }

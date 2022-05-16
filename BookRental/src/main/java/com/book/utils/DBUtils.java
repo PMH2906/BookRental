@@ -8,7 +8,7 @@ import java.sql.Statement;
 //DB와 관련된 설정 정보나 수행들을 관리하는 클래스
 public class DBUtils {
 	// MySQL 서버 URL
-	private static final String DB_URL = "jdbc:mysql://localhost:3307/";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/";
 	// 사용하고자 하는 스키마(Database) 이름
 	private static final String DATABASE_NAME = "book_rental_shop";
 	private static final String USER = "root";
