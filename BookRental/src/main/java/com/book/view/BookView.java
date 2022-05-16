@@ -40,14 +40,10 @@ public class BookView {
 
 	// 파손된 책 정상적으로 삭제
 	public void deleteBookSuccessPage(String brokenBook) {
-		System.out.println(String.format("\n▷ SUCCESS! <%S> 해당 책이 정상적으로 삭제되었습니다.",brokenBook));
-		
+		System.out.println(String.format("\n▷ SUCCESS! <%S> 해당 책이 정상적으로 삭제되었습니다.",brokenBook));		
 	}
 	// 파손된 책 삭제 과정에서 error발생
 	public void deleteBookErrorPage(String brokenBook) {
-		System.out.println(String.format("\n▷ FAIL! <%S> 해당 책이 존재하지 않습니다.",brokenBook));
-		
+		System.out.println(String.format("\n▷ FAIL! <%S> 해당 책이 존재하지 않습니다.",brokenBook));	
 	}
-
-
 }

@@ -10,7 +10,7 @@ public class DBUtils {
 	// MySQL 서버 URL
 	private static final String DB_URL = "jdbc:mysql://localhost:3307/";
 	// 사용하고자 하는 스키마(Database) 이름
-	private static final String DATABASE_NAME = "book";
+	private static final String DATABASE_NAME = "book_rental_shop";
 	private static final String USER = "root";
 	private static final String PASSWORD = "1234";
 	
