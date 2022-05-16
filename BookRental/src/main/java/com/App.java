@@ -1,13 +1,13 @@
 package com;
 
-/**
- * Hello world!
- *
- */
+import com.book.controller.BookController;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	BookController bookController = new BookController();
+
+    	bookController.findAll();
     }
 }
