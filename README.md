@@ -42,10 +42,9 @@
 ## GIT
 * Branches
 <img src="/Branches.JPG" width="300" height="250">
+
 기능별로 branch를 형성한 후, develop branch에서 모든 branch를 merge함.
-
 모든 branch를 merge하여 모든 기능을 구현하면, main branch로 merge할 계획이었음. 
-
 하지만 update기능을 구현하며 문제가 발생하여 해결 중. main에는 아직 merge를 못 한 상황임.
 
 ## REVIEW
