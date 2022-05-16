@@ -26,7 +26,7 @@
 
 ## TROUBLE SHOOTING
 :exclamation: [Trouble Shooting](./TroubleShooting.md) :exclamation:
-- SELECT문과 UPDATE문을 함 사용하여 구현하려고 할 때 오류가 발생 
+- SELECT문과 UPDATE문을 함께 사용하여 구현하려고 할 때 오류가 발생 
   - 해결방식:  PreparedStatement의 객체를 두 번 사용하여 해결.
  
 - CRUD 기능별로 각자 맡아서 구현하여 변수명, 변수의 자료형 등이 달라 SAVE기능을 MERGE 할 때 많은 시간을 소요함.
