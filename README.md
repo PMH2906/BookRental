@@ -39,6 +39,11 @@
 
 - UPDATE 기능 구현 시 도서 테이블의 도서명의 값을 불러오지 못하여 원하는 조건으로 출력하지 못함.
 
+## GIT
+* Branches
+<img src="/Branches.JPG" width="550" height="350">
+기능별로 branch를 형성한 후, develop branch에서 모든 branch를 merge함.
+모든 branch를 merge하여 모든 기능을 구현하면, main branch로 merge할 계획이었음. 하지만 update기능을 구현하며 문제가 발생하여 해결 중. main에는 아직 merge를 못 한 상황임.
 
 ## REVIEW
 🌷 코드를 단순화하고 논리적으로 만들기 위해 파일 여러개를 연결시켜 하나의 기능을 구현을 하게 되었는데, 
