@@ -1,12 +1,20 @@
 package com.book.controller;
 
+
+import java.util.List;
+
+>>>>>>> find
 import com.book.model.Book;
 import com.book.service.BookService;
 import com.book.view.BookView;
 
 public class BookController {
+
 	private final BookView bookView;
 	private final BookService bookService;
+	
+	private List<Book> books;
+
 	
 	public BookController() {
 		this.bookView = new BookView();
@@ -21,7 +29,11 @@ public class BookController {
 		do {
 		// 첫 화면에 베스트셀러 출력하도록 하려면 controller에서 BookService.java를 이용하여 top5 book list받은 후 
 		// systemStart()에 매개변수로 주어 bookView에서 출력해주기
-		choice = bookView.programStart();
+			
+			
+
+		books = bookService.findAll();
+		choice = bookView.programStart(books);
 		switch(choice) {
 		case "1":
 			// 책 대여 서비스 메서드
@@ -75,4 +87,12 @@ public class BookController {
 	}
 	
 
-}
+	
+		// 전체 데이터 조회 처리를 위한 분기
+		public void findAll() {
+			books = bookService.findAll();
+			bookView.findAll(books);
+		}
+
+	}
+

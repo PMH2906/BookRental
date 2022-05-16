@@ -6,10 +6,10 @@ public class App
 {
     public static void main( String[] args )
     {
-    	BookController boolController = new BookController();
+    	BookController bookController = new BookController();
     	
     	// Program Start.
-    	boolController.programStart();
+    	bookController.programStart();
     	
     }
 }

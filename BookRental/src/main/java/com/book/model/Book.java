@@ -4,18 +4,21 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+
 @Setter
 @Getter
 @ToString
 
-public class Book {
 
+public class Book {
 	private int rank;
-	private long bookId;
+	private Long bookId;
+
 	private String title;
 	private String author;
 	private String field;
 	private boolean rentalStatus;
+
 	
 	public Book(Builder builder) {
 		this.rank = builder.rank;
@@ -71,8 +74,17 @@ public class Book {
 		
 	}
 
+	//책정보
+	@Override
+	public String toString() {
+			return "Book [rank=" + rank + 
+					", bookId=" + bookId + 
+					", title" + title + 
+					",author" + author + 
+					", field" + field +  
+					", rentalStatus" + rentalStatus + "]";
 
 	
-	
+}
 	
 }

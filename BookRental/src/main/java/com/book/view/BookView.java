@@ -1,6 +1,7 @@
 package com.book.view;
 
 import java.util.Scanner;
+import java.util.List;
 
 import com.book.model.Book;
 
@@ -8,11 +9,15 @@ public class BookView {
 
 	// 첫 화면에 베스트셀러 출력하도록 하려면 controller에서 BookService.java를 이용하여 top5 book list받은 후 
 	// systemStart()의 매개변수로 받아 여기서 출력해주기
-	public String programStart() {
+	public String programStart(List<Book> books) {
 		String choice="";
 		System.out.println("\n ==== > Book Rental < ====\n"+"\n ==== > Best 5 < ====\n");
 		
 		// Best 5 출력되도록~~~~
+		System.out.println("베스트셀러 리스트입니다.");
+		for(Book book : books) {
+			System.out.println(book);
+		}
 	
 		// 원하는 Service 선택
 		System.out.println("1.책 대여          2.책 추가           3.책 파손          4.프로그램 종료\n");
@@ -81,4 +86,8 @@ public class BookView {
 		System.out.println(String.format("\\n▷ FAIL! <%S> 해당 책이 정상 등록되지 않았습니다.",saveBook));
 		
 	}
-}
+
+	
+	}
+
+
